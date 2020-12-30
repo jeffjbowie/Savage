@@ -1,0 +1,15 @@
+certifi==2020.12.5
+chardet==4.0.0
+colorama==0.4.4
+commonmark==0.9.1
+dropbox==11.0.0
+idna==2.10
+Pillow==8.0.1
+ply==3.11
+Pygments==2.7.3
+requests==2.25.1
+rich==9.6.0
+six==1.15.0
+stone==3.2.1
+typing-extensions==3.7.4.3
+urllib3==1.26.2
