@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Fetch files for {{ uuid }} {% endblock %}
+
+{% block content %}
+<br />
+<br />
+<h2> Fetch files for </h2>
+<h3>{{ uuid }} </h3>
+{% if files_downloaded %}
+    <br />
+    {% for f in files_downloaded %}
+    <p style="font-size:1.5rem;">
+        <span style="color: cyan;">*</span> Downloaded <span style="color: #FCBE11">"{{ f }}"</span><br />
+    </p>
+    
+    {% endfor %}
+{% elif not files_downloaded %}
+    <br />
+    <h4> No files found. </h4>
+{% endif %}
+<br />
+<br />
+
+{% endblock %}

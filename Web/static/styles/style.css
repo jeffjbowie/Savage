@@ -1,0 +1,24 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #26282a;
+	color: #EFEFEF;
+}
+
+.row:first-of-type { margin-top:100px; }
+
+#page-title {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3rem;
+	color: #007bff;
+}
+
+h1 a {
+	color: none;
+	text-decoration: none; 
+	background-color: none;
+}
+
+table {	margin-top:50px; }
+table th {	color: #00FFFF; }
+
+#version { color:#FCBE11; }

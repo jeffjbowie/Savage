@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Send command to {{ uuid }} {% endblock %}
+
+{% block content %}
+<br />
+<br />
+<h2> Send a command to </h2>
+<h3>{{ uuid }} </h3>
+<br />
+<br />
+<form id="cmd-form" action="/send-cmd" method="post">
+	<div class="input-group mb-3">
+		<input type="hidden" name="uuid" value="{{uuid}}" />
+		<input type="text" class="form-control" name="cmd" placeholder="" aria-label="Command" aria-describedby="basic-addon2">
+		<div class="input-group-append">
+			<button class="btn btn-primary" type="submit">Send</button>
+		</div>
+	</div>
+	
+</form>
+{% endblock %}

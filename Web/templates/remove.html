@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Remove {{ uuid }} {% endblock %}
+
+{% block content %}
+<br />
+<br />
+<h2> Remove </h2>
+<h3>{{ uuid }} </h3>
+
+<br />
+<h4>Are you sure?</h4>
+
+<button type="button" class="btn btn-success">Yes</button>
+<button type="button" class="btn btn-danger">No</button>
+
+<br />
+<br />
+
+{% endblock %}

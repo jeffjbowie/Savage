@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %} Savage PUBLIC 0.1 {% endblock %}
+
+{% block content %}
+<table class="table table-hover table-dark">
+	<thead>
+		<th>UUID</th>
+		<th>User</th>
+		<th>Ext. IP</th>
+		<th>Last Seen</th>
+		<th></th>
+	</thead>
+	
+	<tbody>
+		{% for h in hosts %}
+			<tr>
+
+				<td id="uuid"> {{ h['uuid'] }} </td>
+				<td> {{ h['user'] }} </td>
+				<td> {{ h['ext_ip'] }} </td>
+				<td> {{ h['last_seen'] }} </td>
+				<td> 
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						 <!--<a class="dropdown-item" href="{{url_for('command', uuid=h['uuid'])}}">Take A Screenshoot</a>-->
+						  <a class="dropdown-item" href="{{url_for('command', uuid=h['uuid'])}}">Run A Command</a>
+						  <a class="dropdown-item" href="{{url_for('fetch', uuid=h['uuid'])}}">Fetch Files</a>
+						  <a class="dropdown-item" href="{{url_for('remove', uuid=h['uuid'])}}">Remove</a>
+						</div>
+					  </div>
+				</td>
+
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endblock %}
