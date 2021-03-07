@@ -1,5 +1,5 @@
 # Savage PUBLIC 0.1
-
+![Web Interace](https://i.imgur.com/HSDKx4R.png)<div style="page-break-after: always;"></div>
 ![Command-line interface](https://i.imgur.com/NDwXPXI.png)<div style="page-break-after: always;"></div>
 
 
@@ -7,6 +7,7 @@
 ## Features
 
 *   Create & exfiltrate a fileless screenshot
+*   NEW! Web interface built w/ Flask
 *   Leverages Dropbox API
 
 &nbsp;
